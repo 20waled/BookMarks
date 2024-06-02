@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family: "PT Sans Caption", sans-serif;
+    src: url(../webfonts/PTSansCaption-Regular.ttf);
+}
+body {
+    background-color: rgb(122, 55, 184);
+    font-family: "PT Sans Caption", sans-serif;
+}
+@font-face {
+    font-family: "Pacifico", cursive;
+    src: url(../webfonts/Pacifico-Regular.ttf);
+}
+h1 {
+    font-family: "Pacifico", cursive;
+    text-shadow: 4px 4px #470fc2;
+}
+
+@font-face {
+    font-family: "Righteous", sans-serif;
+    src: url(../webfonts/Righteous-Regular.ttf);
+}
+
+ h4 {
+    font-family: "Righteous", sans-serif;
+
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark</title>
+  <link rel="icon" href="images/bookmark.png">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+
+  
+
+  <main>
+    <div class="container mt-5 ">
+      <h1 class="text-center mt-5 display-2 text-danger-emphasis fw-bolder">Bookmarker</h1>
+      <div class="form p-5 ">
+        <h4 class="text-center mb-5 fw-bold"> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+            class="fa-solid fa-bookmark"></i> </h4>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <div class="mb-3 w-100">
+            <label for="sitename" class="mb-2 fw-bold"> <i class="fa-solid fa-book-bookmark mx-2"></i> Site name</label>
+            <input oninput="validateInputs(this)" type="text" class="form-control mb-2" id="sitename"
+              placeholder="Bookmark Name">
+            <div class="alert alert-danger p-1 d-none">
+              <small>Site Name Must Start With Uppercase....</small>
+            </div>
+          </div>
+          <div class="mb-3 w-100">
+            <label for="siteurl" class="mb-2 fw-bold"> <i class="fa-solid fa-link mx-2"></i> Site URL</label>
+            <input oninput="validateInputs(this)" type="url" class="form-control mb-2" id="siteurl"
+              placeholder="Website URL">
+            <div class="alert alert-danger p-1 d-none">
+              <small>Site URL Must Contain http:// ......</small>
+            </div>
+          </div>
+          <button class="btn btn-sm btn-warning px-5 py-2" onclick="addWebsite()">Submit</button>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+    <div class="container p-3 ">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="content"></tbody>
+      </table>
+    </div>
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/index.js"></script>
+</body>
+
+</html>
